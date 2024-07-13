@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS  Pin Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="first-section">
+            <div class="first-section-content">
+                <h1>Generate pin</h1>
+            </div>
+            <div class="input-div">
+                <input type="text" class="first-input" readonly>
+                <div class="Generate-div">
+                    Generate
+                </div>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="second-section-heading">
+                <h1>Submit Pin</h1>
+            </div>
+            <div class="output-div">
+                <input type="text" class="output" readonly>
+                <div class="btn-div">
+                    <button class="btn"  onclick="showKeyPadInput(this.innerText)">7</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">8</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">9</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">4</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">5</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">6</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">1</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">2</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">3</button>
+                    <button class="btn" id="removebtn" onclick="removeSingleDigit()"><</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">0</button>
+                    <button class="btn" onclick="showKeyPadInput(this.innerText)">C</button>
+                </div>
+                <div class="submit-btn-div">
+                    <button class="submit-btn">Submit</button>
+                    <p class="times-left"><span class="tryLeft">3</span> Times Left</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div  class="last-text">
+        <p id="correct">✅ That's Correct pin</p>
+        <p id="wrong">❌ Wrong Pin. Please Enter Right Pin</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-section{
+    max-width: 300px;
+    height: 470px;
+    background-color: rgb(5, 118, 189);
+    padding: 30px;
+    border-radius: 10px;
+}
+.first-section-content h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.first-input{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(5, 118, 189);
+    border-radius: 8px;
+    background-color: rgb(8, 51, 78);
+    color: white;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.Generate-div{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(33, 59, 80);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 7px;
+    border: 4px solid bisque;
+    color: aliceblue;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+.Generate-div:hover{
+    cursor: pointer;
+    background-color: rgb(51, 92, 126);;
+}
+.second-section{
+    max-width: 300px;
+    height: 470px;
+    background-color: rgb(5, 118, 189);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.second-section-heading h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.output{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(5, 118, 189);
+    border-radius: 8px;
+    background-color: rgb(8, 51, 78);
+    color: white;
+}
+.output-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.btn-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 8px;
+}
+.submit-btn{
+    font-size: 20px;
+    padding: 10px 18px;
+    font-weight: bold;
+    border:1px solid navy;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 10px;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: aliceblue;
+}
+.times-left{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+.last-text{
+    font-size: 20px;
+    text-align: center;
+}
+.submit-btn-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#correct{
+    display: none;
+}
+#wrong{
+    display: none;
+}
+@media(max-width:300px){
+    .container{
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .second-section{
+        max-width: 300px;
+        height: 510px;
+        background-color: rgb(5, 118, 189);
+        padding: 30px;
+        border-radius: 10px;
+    
+    }
+}
